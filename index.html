@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apresentação SO - 3ª Geração</title>
+    <link rel="stylesheet" href="./css/visual.css">
+</head>
+
+
+
+<body>
+
+    <button id="btn-prev" class="nav-btn"><--</button>
+    <button id="btn-next" class="nav-btn">--></button>
+
+    <main>
+
+        <section class="slide atual">
+
+            <div>
+
+                <h2>Evolução dos SOs: <em>3ª Geração</em></h2>
+
+                <p>Equipe: [Seus Nomes]</p>
+
+                <p>Disciplina: Sistemas Operacionais</p>
+
+                <p>Prof. <em>Hewerton Santiago</em></p>
+
+            </div>
+
+            <img src="./imagens/Capa.png" alt="capa">
+
+        </section>
+
+        <section class="slide">
+
+            <div>
+
+                <h2>Contexto Histórico e <em>#Época</em></h2>
+
+                <ul>
+
+                    <li>Período: <em>1965 a 1980</em>.</li>
+
+                    <li>Substituição dos transistores pelos <em>Circuitos Integrados (CIs)</em>.</li>
+
+                    <li>Computadores menores, mais rápidos e multitarefas.</li>
+
+                </ul>
+
+            </div>
+
+            <img src="./imagens/imb-360.png" alt="Imagem do IBM System/360">
+        
+        </section>
+
+        <section class="slide">
+
+            <div>
+
+                <h2>Caracterização: <em>Multiprogramação</em></h2>
+
+                <ul>
+
+                    <li>A CPU não fica mais ociosa esperando dados.</li>
+
+                    <li>A memória é <em>dividida entre vários jobs</em> (tarefas).</li>
+
+                    <li>Otimização drástica do tempo de uso do processador.</li>
+
+                </ul>
+
+            </div>
+
+            <img src="./imagens/kernel_rings.webp" alt="Diagrama de Multiprogramação">
+
+        </section>
+
+        <section class="slide">
+
+            <div>
+
+                <h2><em>#Estrutura</em> e <em>#Camadas</em></h2>
+
+                <ul>
+
+                    <li>Organização do sistema em <em>níveis de abstração</em>.</li>
+
+                    <li>Isolamento do hardware do usuário final.</li>
+
+                    <li>Facilita a programação e garante <em>maior segurança</em>.</li>
+
+                </ul>
+
+            </div>
+
+            <img src="./imagens/separacao-niveis.png" alt="Gráfico de Camadas do SO">
+
+        </section>
+
+        <section class="slide">
+
+            <div>
+
+                <h2>O <em>#Kernel</em> / <em>#Núcleo</em></h2>
+                
+                <ul>
+
+                    <li>Atua como o <em>"maestro"</em> do sistema.</li>
+
+                    <li>Gerencia memória, escalonamento e periféricos.</li>
+
+                    <li>Software residente essencial para a complexidade da <em>multiprogramação</em>.</li>
+
+                </ul>
+
+            </div>
+
+            <img src="./imagens/amd-threadripper.webp" alt="Representação do Kernel">
+
+        </section>
+
+        <section class="slide">
+
+            <div>
+
+                <h2><em>#Tipo de Processamento</em> e <em>#Shell</em></h2>
+
+                <ul>
+
+                    <li>Evolução para o <em>Time-sharing</em> (Tempo Compartilhado).</li>
+
+                    <li>Vários usuários simultâneos no mesmo computador.</li>
+
+                    <li>Introdução do <em>Shell</em>: interface de linha de comando.</li>
+
+                </ul>
+
+            </div>
+
+            <img src="./imagens/compute_cluster-removebg-preview.png" alt="Imagem de interface Time-sharing/Shell">
+
+        </section>
+
+        <section class="slide">
+
+            <div>
+
+                <h2><em>#NomeSO</em> e <em>#Proprietário</em></h2>
+
+                <ul>
+
+                    <li><em>OS/360</em> (Proprietário: IBM) - Família de sistemas.</li>
+
+                    <li><em>MULTICS</em> (MIT, Bell Labs, GE) - Ambicioso e inovador.</li>
+
+                    <li><em>UNIX</em> (AT&T / Bell Labs) - Um marco na computação.</li>
+
+                </ul>
+
+            </div>
+
+            <img src="./imagens/terminal-classico.png" alt="terminais dos SOs clássicos">
+
+        </section>
+
+        <section class="slide">
+
+            <div>
+
+                <h2><em>#Máquina Virtual</em> e Inovação</h2>
+
+                <ul>
+
+                    <li>Surgimento no sistema <em>IBM CP/CMS</em>.</li>
+
+                    <li>Simulação de um <em>hardware completo</em> para cada usuário.</li>
+
+                    <li>Permite rodar diferentes SOs na mesma máquina física.</li>
+
+                </ul>
+
+            </div>
+
+            <img src="./imagens/diagrama-maquina-virtual.png" alt="Diagrama de Máquina Virtual">
+
+        </section>
+
+        <section class="slide">
+
+            <div>
+
+                <h2><em>#Tipo de Chamada de Sistema</em></h2>
+
+                <ul>
+
+                    <li>A ponte entre as aplicações e o <em>núcleo</em>.</li>
+
+                    <li>Padronização para solicitação de serviços.</li>
+
+                    <li>Exemplos: <em>read()</em>, <em>write()</em>, <em>open()</em>, <em>fork()</em>.</li>
+
+                </ul>
+
+            </div>
+
+            <img src="./imagens/calls.png" alt="Esquema de System Calls">
+
+        </section>
+
+        <section class="slide">
+
+            <div>
+
+                <h2>Pontos <em>Positivos</em> e <em>Negativos</em></h2>
+
+                <ul>
+
+                    <li><strong>Positivos:</strong> Aumento de eficiência, interatividade, portabilidade.</li>
+
+                    <li><strong>Negativos:</strong> Alta <em>complexidade</em> de software (bugs), sistemas muito pesados, hardware caro.</li>
+
+                </ul>
+
+            </div>
+
+            <img src="./imagens/libra.png" alt="Balança de prós e contras">
+
+        </section>
+
+        <section class="slide">
+
+            <div>
+
+                <h2>Contribuição para a <em>Próxima Geração</em></h2>
+
+                <ul>
+
+                    <li>Deixou o caminho pronto para a <em>4ª geração (PCs)</em>.</li>
+
+                    <li>Desenvolvimento da poderosa <em>linguagem C</em>.</li>
+
+                    <li>O sistema <em>UNIX</em> e a lógica moderna de gerenciamento de memória.</li>
+
+                </ul>
+
+            </div>
+
+            <img src="./imagens/trans.png" alt="Transição para a 4a geração">
+
+        </section>
+
+        <section class="slide">
+
+            <div>
+
+                <h2><em>Conclusão</em></h2>
+
+                <ul>
+
+                    <li>O <em>divisor de águas</em> da computação.</li>
+
+                    <li>Fim da máquina de "uma coisa por vez".</li>
+
+                    <li>O nascimento dos <em>padrões modernos</em> e multiusuários.</li>
+
+                </ul>
+
+            </div>
+
+            <img src="./imagens/encerramento.png" alt="Imagem de encerramento">
+
+        </section>
+
+    </main>
+
+    <script src="./engine/slides.js"></script>
+
+ </body>
+ 
+</html>
