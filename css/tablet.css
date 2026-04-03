@@ -1,0 +1,21 @@
+@media screen and (max-width: 850px) {
+
+  .nav-btn {
+    position: absolute;
+    bottom: 10%;
+  }
+
+  #btn-prev {
+    left: 10%;
+  }
+
+  #btn-next {
+    right: 10%;
+  }
+
+  main{
+    width: 95%;
+    height: 95%;
+  }
+    
+}

@@ -21,12 +21,12 @@ body {
     
     
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    position: relative;
 }
+
+
 
 main {
     background-color: #fdfdfd; /* Fundo simulando o quadro branco */
@@ -36,8 +36,10 @@ main {
     max-width: 1200px;
     height: 70vh;
     box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.6); /* Sombra do quadro na parede */
-    overflow: hidden;
+    padding: 5px;
 }
+
+
 
 .slide {
     display: none; /* Oculto por padrão */
@@ -49,12 +51,16 @@ main {
     font-size: 1.8rem;
 }
 
+
+
 .slide.atual {
     display: flex; /* Sem flex-direction para manter em linha (row) */
     align-items: center;
     justify-content: space-between;
     gap: 2rem;
 }
+
+
 
 /* A Div que guarda o texto */
 .slide div {
@@ -63,6 +69,8 @@ main {
     justify-content: center;
     width: 60%;
 }
+
+
 
 /* A Imagem do slide */
 .slide img {
@@ -74,41 +82,42 @@ main {
     object-fit: contain;
 }
 
+
+
 .slide em {
     color: red;
     font-style: normal;
     font-weight: bold;
 }
 
+
+
 /* Botões de Navegação nas extremidades */
 .nav-btn {
-    position: absolute;
-    top: 50%;
     transform: translateY(-50%);
-    background-color: rgba(255, 255, 255, 0.8);
-    color: darkslateblue;
     border: none;
     font-size: 2rem;
     font-weight: bold;
     padding: 1rem 1.5rem;
-    border-radius: 8px;
+    border-radius: 50%;
     cursor: pointer;
     transition: 0.2s;
-    z-index: 10;
+}
+
+.nav-btn img{
+    width: 2rem;
+    height: 2rem;
+    padding: clamp(5px, 1rem, 32px);
 }
 
 .nav-btn:hover {
-    background-color: white;
+    background-color: blue;
     box-shadow: 0 0 10px rgba(255,255,255,0.5);
 }
 
-#btn-prev {
-    left: 20px;
-}
+#btn-prev img{ transform: scaleX(-1); }
 
-#btn-next {
-    right: 20px;
-}
+
 
 /* Ajustes de tipografia do texto */
 h2 {
@@ -116,10 +125,6 @@ h2 {
     font-size: 2.5rem;
 }
 
-ul {
-    padding-left: 20px;
-}
+ul { padding-left: 20px; }
 
-li {
-    margin-bottom: 10px;
-}
+li { margin-bottom: 10px; }

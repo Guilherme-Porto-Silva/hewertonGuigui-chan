@@ -1,0 +1,14 @@
+@media screen and (max-width: 500px) {
+
+    main{ padding: 0%; }
+
+    ul { padding-left: 2px; }
+    
+    li { margin-bottom: 1px; }
+
+    .slide.atual {
+        flex-direction: column;
+        font-size: large;
+    }
+      
+  }
