@@ -1,14 +1,29 @@
 @media screen and (max-width: 500px) {
 
-    main{ padding: 0%; }
-
     ul { padding-left: 2px; }
     
     li { margin-bottom: 1px; }
 
+    h2 { font-size: 1.3rem; }
+
+    body{ height: calc(min-content + 60px); }
+
+    main{
+        padding: 5px;
+        height: calc(min-content + 10px);
+    }
+
     .slide.atual {
         flex-direction: column;
-        font-size: large;
     }
-      
+
+    .nav-btn {
+      bottom: 50px;
+      width: 20%;
+      height: 5%;
+    }
+
+    .slide img {
+        width: 100%;
+    }
   }

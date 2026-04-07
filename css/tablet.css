@@ -2,7 +2,9 @@
 
   .nav-btn {
     position: absolute;
-    bottom: 10%;
+    bottom: 20px;
+    width: 17%;
+    height: 10%;
   }
 
   #btn-prev {
@@ -17,5 +19,7 @@
     width: 95%;
     height: 95%;
   }
+
+  h2 { font-size: 2rem; }
     
 }
