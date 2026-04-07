@@ -98,22 +98,25 @@ main {
     border: none;
     font-size: 2rem;
     font-weight: bold;
-    padding: 1rem 1.5rem;
+    padding: 0.5rem;
     border-radius: 50%;
     cursor: pointer;
     transition: 0.2s;
 }
 
 .nav-btn img{
-    width: 2rem;
-    height: 2rem;
-    padding: clamp(5px, 1rem, 32px);
+    width: 95%;
+    height: 95%;
 }
 
-.nav-btn:hover {
+.nav-btn:hover, .nav-btn:focus{
     background-color: blue;
     box-shadow: 0 0 10px rgba(255,255,255,0.5);
 }
+
+.nav-btn:focus:hover{ background-color: blueviolet; }
+
+
 
 #btn-prev img{ transform: scaleX(-1); }
 
