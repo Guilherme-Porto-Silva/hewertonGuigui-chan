@@ -96,8 +96,6 @@ main {
 .nav-btn {
     transform: translateY(-50%);
     border: none;
-    font-size: 2rem;
-    font-weight: bold;
     padding: 0.5rem;
     border-radius: 50%;
     cursor: pointer;
