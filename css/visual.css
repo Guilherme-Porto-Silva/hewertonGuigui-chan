@@ -1,6 +1,9 @@
 body {
     margin: 0;
     min-height: 100vh;
+    padding: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow: hidden;
 
 
 
@@ -17,25 +20,25 @@ body {
     background-blend-mode: normal, normal, normal, normal, normal, normal, multiply;
     background-size: 300px 300px, 400px 350px, 200px 250px, 350px 400px, 250px 300px, 450px 450px, 150px 150px;
     background-repeat: repeat;
+    /* ----------------------- */
     
     
     
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 
 
 main {
-    background-color: #fdfdfd; /* Fundo simulando o quadro branco */
-    border: 16px groove #a0a5a8; /* Contorno de ferro */
+    background-color: #fdfdfd; /* quadro branco */
+    border: 16px groove #a0a5a8; /* contorno de ferro */
     border-radius: 8px;
-    width: 80vw;
+    width: 80%;
     max-width: 1200px;
     height: 70vh;
-    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.6); /* Sombra do quadro na parede */
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.6); /* sombra do quadro na parede */
     padding: 5px;
 }
 

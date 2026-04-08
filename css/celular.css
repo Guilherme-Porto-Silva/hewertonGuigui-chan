@@ -6,11 +6,16 @@
 
     h2 { font-size: 1.3rem; }
 
-    body{ height: calc(min-content + 60px); }
+    body{
+        flex-direction: column;
+        justify-content: flex-start;
+        padding: 5px;
+        height: 100vh;
+    }
 
     main{
         padding: 5px;
-        height: calc(min-content + 10px);
+        height: 50%;
     }
 
     .slide.atual {
@@ -18,7 +23,7 @@
     }
 
     .nav-btn {
-      bottom: 50px;
+      bottom: 10%;
       width: 20%;
       height: 5%;
     }
