@@ -3,6 +3,7 @@ body {
     min-height: 100vh;
     padding: 15px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: larger;
     overflow: hidden;
 
 
@@ -35,11 +36,11 @@ main {
     background-color: #fdfdfd; /* quadro branco */
     border: 16px groove #a0a5a8; /* contorno de ferro */
     border-radius: 8px;
-    width: 80%;
-    max-width: 1200px;
-    height: 70vh;
+    width: clamp(50%, 75%, 80%);
+    max-height: 1155px;
     box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.6); /* sombra do quadro na parede */
     padding: 5px;
+    font-size: larger;
 }
 
 
@@ -54,36 +55,30 @@ main {
     font-size: larger;
 }
 
-
-
 .slide.atual {
     display: flex;
     align-items: center;
     justify-content: space-around;
+    font-size: larger;
 }
-
-
 
 /* A Div que guarda o texto */
 .slide div {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 60%;
+    width: 50%;
+    font-size: larger;
+
 }
 
-
-
-/* A Imagem do slide */
 .slide img {
-    width: 35%;
-    max-height: 80%;
-    border: 2px dashed #ccc; /* Borda tracejada temporária enquanto está sem src */
-    background-color: #eee;
+    width: 50%;
+    max-height: 1100px;
+    border: none;
+    background: none;
     object-fit: contain;
 }
-
-
 
 .slide em {
     color: red;
@@ -93,7 +88,6 @@ main {
 
 
 
-/* Botões de Navegação nas extremidades */
 .nav-btn {
     transform: translateY(-50%);
     width: 5%;
@@ -115,8 +109,6 @@ main {
 }
 
 .nav-btn:focus:hover{ background-color: blueviolet; }
-
-
 
 #btn-prev img{ transform: scaleX(-1); }
 

@@ -1,5 +1,12 @@
 @media screen and (max-width: 850px) {
 
+  body{
+      flex-direction: column;
+      justify-content: flex-start;
+      padding: 5px;
+      height: 100vh;
+  }
+
   .nav-btn {
     position: absolute;
     bottom: 20px;
@@ -17,7 +24,7 @@
 
   main{
     width: 95%;
-    height: 95%;
+    height: 65%;
   }
 
   h2 { font-size: 2rem; }
