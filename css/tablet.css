@@ -7,6 +7,13 @@
       height: 100vh;
   }
 
+  main{
+    width: 95%;
+    height: max-content;
+  }
+
+  h2 { font-size: 2rem; }
+
   .nav-btn {
     position: absolute;
     bottom: 20px;
@@ -14,19 +21,8 @@
     height: 10%;
   }
 
-  #btn-prev {
-    left: 10%;
-  }
+  #btn-prev { left: 10%; }
 
-  #btn-next {
-    right: 10%;
-  }
-
-  main{
-    width: 95%;
-    height: 65%;
-  }
-
-  h2 { font-size: 2rem; }
+  #btn-next { right: 10%; }
     
 }

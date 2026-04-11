@@ -4,10 +4,9 @@
     
     li { margin-bottom: 1px; }
 
-    main{
-        width: 97%;
-        height: 55%;
-    }
+    main{ width: 97%; }
+
+    .slide img { width: 100%; }
 
     .slide.atual {
         flex-direction: column;
@@ -21,9 +20,5 @@
       bottom: 10%;
       width: 20%;
       height: 5%;
-    }
-
-    .slide img {
-        width: 100%;
     }
   }
