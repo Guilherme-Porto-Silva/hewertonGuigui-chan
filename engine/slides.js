@@ -1,8 +1,16 @@
 // Seleciona todos os slides e os botões
-        const slides = document.querySelectorAll('.slide');
+        const slides = [];
         const btnPrev = document.getElementById('btn-prev');
         const btnNext = document.getElementById('btn-next');
         let slideAtual = 0;
+
+
+
+        function pegar_slides() {
+            slides.push(...document.querySelectorAll('.slide'));
+        }
+
+
 
         // Função para mostrar um slide específico
         function mostrarSlide(index) {
